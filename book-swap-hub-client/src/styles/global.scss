@@ -1,0 +1,8 @@
+@import "./theme/light";
+@import "./theme/dark";
+@import "reset";
+.app {
+  background-color: var(--bg-secondary);
+  height: 100%;
+}
+

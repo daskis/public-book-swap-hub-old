@@ -1,0 +1,47 @@
+.book {
+  padding: 20px;
+  width: 100%;
+  & > h1,h2,h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  &  p {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+  & img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  & > :not(img):not(div:last-child) {
+    display: none;
+  }
+  & div {
+    margin: 40px 0;
+  }
+  & p {
+    margin: 20px 0;
+  }
+}
+.wrapper {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  opacity: 60%;
+}
+.drawerList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

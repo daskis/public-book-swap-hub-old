@@ -1,0 +1,149 @@
+.wrapper {
+  background-color: var(--bg-primary);
+  width: calc(100% - 40px);
+  max-width: 100%;
+  margin: 20px;
+  max-height: 100%;
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  & h2 {
+    text-align: center;
+  }
+}
+.inputs {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+
+  &Item {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & span {
+      font-size: 16px;
+      padding: 10px 0;
+    }
+  }
+}
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+  position: relative;
+
+  & svg {
+
+    fill: var(--text-primary);
+  }
+
+  & img {
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    height: calc(100% - 40px);
+  }
+  & .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.imagefile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.imagefile + label {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+  border-radius: 10px;
+}
+
+.imagefile + label:hover {
+  background-color: var(--bg-secondary);
+}
+
+.imagefile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+
+
+
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  width: 50%;
+  height: 100%;
+  background-color: var(--bg-secondary);
+  padding: 10px;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+  border-radius: 10px;
+}
+
+.inputfile + label:hover {
+  background-color: var(--bg-primary);
+}
+
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+
+@media screen and (max-width: 769px) {
+  .buttons {
+    margin-bottom: 40px;
+  }
+  .wrapper {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .form {
+    margin: 20px;
+    flex-direction: column;
+    &Item {
+      width: 100%;
+    }
+  }
+  .img {
+    width: 100%;
+  }
+  .inputfile + label {
+    width: 100%; /* "hand" cursor */
+  }
+
+}

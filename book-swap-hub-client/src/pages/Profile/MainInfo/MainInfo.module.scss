@@ -1,0 +1,107 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.baseInfo {
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.avatar {
+  position: relative;
+  cursor: pointer;
+  & .edit {
+    font-size: 24px;
+    color: var(--text-primary);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+
+  }
+  & img {
+    width: 128px;
+    height: 128px;
+  }
+  &Input {
+    opacity: 0;
+    bottom: 10px;
+    z-index: 10;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+  }
+}
+
+
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputPassword {
+  margin-top: 10px;
+  position: relative;
+
+  & svg {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    top: 8px;
+  }
+
+  & .passwordEdit {
+    z-index: 124121422;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    top: 0px;
+  }
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.input {
+  margin-top: 10px;
+  position: relative;
+  & span {
+    color: var(--text-primary);
+  }
+  & svg {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    top: 8px;
+  }
+}
+
+.label {
+  color: var(--text-primary);
+  font-size: 14px;
+  opacity: 70%;
+}
+
+@media (max-width: 769px) {
+  .baseInfo {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputs {
+    width: 100%;
+  }
+}

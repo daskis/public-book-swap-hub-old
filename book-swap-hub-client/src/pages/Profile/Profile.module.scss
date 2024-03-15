@@ -1,0 +1,29 @@
+.wrapper {
+  margin: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.menu {
+  padding: 20px 0;
+  border-radius: 10px;
+  max-width: 200px;
+  background-color: var(--bg-primary);
+}
+.info {
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  background-color: var(--bg-primary);
+}
+@media (max-width: 769px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  background-color: var(--bg-primary);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  & div {
+    display: flex;
+    gap: 20px;
+    & img {
+      width: 40px;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  .info {
+    & div {
+      & img {
+        width: 30px;
+      }
+    }
+  }
+}
